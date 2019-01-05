@@ -19,7 +19,7 @@ namespace GradeBook.GradeBooks
             var grades = Students.OrderByDescending(e => e.AverageGrade).Select(e => e.AverageGrade).ToList();
 
             if (grades[threshhold - 1] <= averageGrade)
-                return = 'A';
+                return 'A';
             else if (grades[(threshhold * 2) - 1] <= averageGrade)
                 return 'B';
             else if (grades[(threshhold * 2) - 1] <= averageGrade)
